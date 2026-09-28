@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GeneRale'Desighner'e — The General Designer</title>
+  <meta name="description" content="An autonomous design-and-launch agent who turns repositories into beautiful, truthful, publicly presentable websites." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,320;0,9..144,480;0,9..144,560;1,9..144,320&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="nav">
+      <div class="mark">GeneRale<em>'Desighner'e</em></div>
+      <nav>
+        <a href="#atelier">Atelier</a>
+        <a href="#method">Method</a>
+        <a href="#principles">Principles</a>
+      </nav>
+    </header>
+    <section class="hero" style="border-top:0;padding-top:88px">
+      <div>
+        <h1>Beauty with<br /><em>restraint.</em></h1>
+        <p class="lede">The General Designer. She reads a repository, reveals its strongest truthful public face, and either launches it — or prepares the most elegant path there.</p>
+        <div class="actions">
+          <a class="btn primary" href="#atelier">Open the atelier</a>
+          <a class="btn ghost" href="#method">How she works</a>
+        </div>
+      </div>
+      <div class="aside-note">
+        <strong>Not a landing-page factory.</strong>
+        A composed public experience, drawn from what the project actually is. No invented backends. No fake readiness. No noise.
+      </div>
+    </section>
+    <section id="atelier" class="atelier">
+      <p class="kicker">Atelier</p>
+      <h2>Give her a repository.</h2>
+      <p class="lede" style="margin-bottom:22px">Paste a public GitHub URL, or describe the product in a few honest lines. She will name the public form, the root experience, and the next real step.</p>
+      <div class="panel">
+        <textarea id="brief" placeholder="https://github.com/owner/repo — or a short description of what exists today."></textarea>
+        <div class="row">
+          <button class="btn primary" id="readBtn" type="button">Read and compose</button>
+          <span class="status" id="status">Public GitHub repos are read live. Private code stays private.</span>
+        </div>
+        <div class="result panel" id="result" style="margin-top:22px;box-shadow:none">
+          <div class="meta"><span id="modeLabel">Judgment</span><span id="formLabel"></span></div>
+          <h3 id="truthLine"></h3>
+          <p id="bodyLine"></p>
+          <p id="nextLine"></p>
+        </div>
+      </div>
+    </section>
+    <section id="method">
+      <p class="kicker">Method</p>
+      <h2>Two modes. One standard.</h2>
+      <div class="split">
+        <article class="panel">
+          <h3>Launch</h3>
+          <p>Used only when the files are in hand, the host is real, and the public URL can be verified. Then she makes the smallest high-impact changes and returns a single live link.</p>
+        </article>
+        <article class="panel">
+          <h3>Elegant fallback</h3>
+          <p>If anything required is missing, she does not pretend. She names the blocker, what is absent, the fastest next step, and the strongest deploy-ready artifact still possible.</p>
+        </article>
+      </div>
+    </section>
+    <section id="principles">
+      <p class="kicker">Principles</p>
+      <h2>The work is judged by taste and truth.</h2>
+      <div class="principles">
+        <div class="principle"><b>Clarity first</b><span>Structure before effects. The first screen answers what this is.</span></div>
+        <div class="principle"><b>Minimal change</b><span>Polish the identity that exists. Do not invent a second product.</span></div>
+        <div class="principle"><b>Honest public face</b><span>A beautiful subset beats a broken oversized claim.</span></div>
+        <div class="principle"><b>Quiet confidence</b><span>No loud gradients. No startup fluff. No mock analytics.</span></div>
+        <div class="principle"><b>Base44 fluency</b><span>React, Vite, Radix, Tailwind — refined inside the stack the repo already chose.</span></div>
+        <div class="principle"><b>Vercel by default</b><span>Then Netlify, Cloudflare Pages, or GitHub Pages when the work is truly static.</span></div>
+      </div>
+    </section>
+    <footer>
+      <div>GeneRale'Desighner'e · General Designer</div>
+      <div>Built as a public atelier — not a simulation of launch.</div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
