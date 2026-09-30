@@ -1,4 +1,4 @@
-# GeneRale'Desighner'e
+# General Designer
 
 Public atelier for the General Designer.
 
